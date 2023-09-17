@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vibe Of The Songs</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="container-inicial active">
+            <span id="title">The Vibe Of The Songs</span>
+            <div class="search">
+                <img src="img/search.png" id="img-search">
+                <input type="search" id="search-music" placeholder="Pesquisar Música" autocomplete="off">
+            </div>
+            <div class="container-musics">
+            </div>
+        </div>
+        <div class="container-music">
+            <div class="header">
+                <img src="img/back.png" id="close">
+                <span id="title-header">Reproduzindo</span>
+            </div>
+            <div class="cover-current">
+                <img src="" id="cover-current">
+            </div>
+            <div class="name-author-current">
+                <span id="name-current"></span>
+                <span id="author-current"></span>
+            </div>
+            <div class="playback-properties">
+                <div class="timeline">
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="timeline" value="0" min="0" step="1">
+                    <span id="end-time">0:00</span>
+                </div>
+                <div class="properties">
+                    <button id="random-music">
+                        <img src="img/random.png" id="random-music-img">
+                        <img src="img/random-active.png" id="random-music-active-img">
+                    </button>
+                    <button id="back-music">
+                        <img src="img/next-back.png" id="back-music-img">
+                    </button>
+                    <button id="pause-play">
+                        <img src="img/pause.png" id="pause-img" class="play-pause-img">
+                        <img src="img/play.png" id="play-img" class="play-pause-img">
+                    </button>
+                    <button id="next-music">
+                        <img src="img/next-back.png" id="next-music-img">
+                    </button>
+                    <button id="repeat-music">
+                        <img src="img/repeat.png" id="repeat-music-img">
+                        <img src="img/repeat-active.png" id="repeat-music-active-img">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="box-playing-music">
+            <div class="side_01">
+                <div class="cover-playing">
+                    <img src="" id="playing-music-cover">
+                </div>
+                <div class="name-author-playing">
+                    <span id="playing-name"></span>
+                    <span id="playing-author"></span>
+                </div>
+            </div>
+            <div class="side_02">
+                <button id="back-music-playing">
+                    <img src="img/next-back.png" id="back-music-playing-img">
+                </button>
+                <button id="pause-play-playing">
+                    <img src="img/pause.png" id="pause-playing-img" class="play-pause-playing-img">
+                    <img src="img/play.png" id="play-playing-img" class="play-pause-playing-img">
+                </button>
+                <button id="next-music-playing">
+                    <img src="img/next-back.png" id="next-music-img-playing">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
